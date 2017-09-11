@@ -80,15 +80,9 @@ p {
 .nameWhiteFont{
   color: white;
 }
-.CircularProgressbar {
-  /*
-   * This fixes an issue where the CircularProgressbar svg has
-   * 0 width inside a "display: flex" container, and thus not visible.
-   *
-   * If you're not using "display: flex", you can remove this style.
-   */
-  width: 80%;
 
+.CircularProgressbar {
+  width: 80%;
 }
 
 .CircularProgressbar .CircularProgressbar-path {
@@ -134,11 +128,16 @@ hr {
 }
 
 .contactMeHeader {
-  margin-left: 42%;
+  margin-left: 5%;
+}
+
+.socialMediaIcons {
+  margin-left: -9%;
 }
 
 .contactText {
   font-size: 35px;
+  margin-left: 5%;
   
 }
 
@@ -172,6 +171,13 @@ hr {
   width: '500px';
 }
 
+.navItems{
+  color:#9d9d9d;
+}
+
+.navItems:hover{
+  color:white;
+}
 
 /* For Tablets */
 @media screen and (min-width: 540px) and (max-width: 780px) {
@@ -198,6 +204,34 @@ hr {
   }
   .sendEmailButton {
     margin-left: 30%;
+  }
+
+  .smallScreen{
+    margin-left:-100px;
+  }
+
+  .contactText {
+    font-size: 35px;
+    margin-left: 10%;
+  }
+
+  .CircularProgressbar {
+    width: 40%;
+    margin-left:30%;
+  }
+
+  .moduleNames{
+    margin-left: 15%;
+  }
+
+  .moduleNamesMargin{
+    margin-bottom: 5%;
+  }
+
+  .transcriptModal{
+    width:100%;
+    height: 100%;
+    text-align: center;
   }
 }
 

@@ -66,7 +66,7 @@ class ContactMe extends Component{
             <br />
             <hr/>
                 <Row>
-                    <Col lg={4} lgOffset={4}>
+                    <Col lg={4} lgOffset={4} xsOffset={4}>
                         <Button type="submit" bsStyle="primary" className={"sendEmailButton"}>
                             Send Email
                         </Button>
@@ -74,11 +74,13 @@ class ContactMe extends Component{
                 </Row>
             </Form>
                 <Row>
-                    <Col lg={3}  className={"contactMeSocialIcons"}> 
+                    <Col lg={5} lgOffset={7} xs={8}  xsOffset={7}> 
                         <h1>
-                            <LinkedInIcon />
-                            <FacebookIcon />
-                            <Twittericon />  
+                            <div className={"socialMediaIcons"}>
+                                <LinkedInIcon />
+                                <FacebookIcon />
+                                <Twittericon />  
+                            </div>
                         </h1>
                     </Col>
                 </Row>
@@ -88,12 +90,12 @@ class ContactMe extends Component{
             <div className={"background"}>
                 <NavBar />
                 <Row>
-                    <Col lg={3}  className={"contactMeHeader"}> 
+                     <Col lg={3} lgOffset={5} xs={8}  xsOffset={3}> 
                         <div className={"contactText"}> Contact <div className={"envelopeIcon"}><Glyphicon glyph="envelope"/></div></div> 
                     </Col>
                 </Row>  
                 <Row>
-                     <Col lg={8} lgOffset={1}>
+                     <Col lg={8} lgOffset={1} xs={8} xsOffset={0}>
                           <br/><br/>
                            {formInstance}
                      </Col>

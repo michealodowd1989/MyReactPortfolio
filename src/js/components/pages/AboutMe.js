@@ -81,25 +81,25 @@ class AboutMe extends Component{
                             <br/><br/>                            
                         </div> 
                         <Row>
-                            <Col lg={3}>
+                            <Col lg={3} className={"moduleNamesMargin"}>
                                 <CircularProgressbar percentage={96} initialAnimation={true} />
                                     <br/>
-                                    <b>SOFTWARE ENGINEERING PROJECT</b>
-                            </Col>
+                                    <b className={"moduleNames"}>SOFTWARE ENGINEERING PROJECT</b>
+                            </Col >
                             <Col lg={3}>
                                 <CircularProgressbar percentage={92} initialAnimation={true} />
                                 <br/>
-                                <b>OBJECT ORIENTED PROGRAMMING 3</b>
+                                <b className={"moduleNames"}>OBJECT ORIENTED PROGRAMMING 3</b>
                             </Col>
                             <Col lg={3}>
                                 <CircularProgressbar percentage={90}  initialAnimation={true} />
                                 <br/>
-                                <b>DYNAMIC WEB: OPENSOURCE AP</b>
+                                <b className={"moduleNames"}>DYNAMIC WEB: OPENSOURCE AP</b>
                             </Col>
                             <Col lg={3}>
                                 <CircularProgressbar percentage={80} initialAnimation={true} />
                                 <br/>
-                                <b>ROUTING CONCEPTS AND PROTOCOLS</b>
+                                <b className={"moduleNames"}>ROUTING CONCEPTS AND PROTOCOLS</b>
                              </Col>
                         </Row>
                     </Col>

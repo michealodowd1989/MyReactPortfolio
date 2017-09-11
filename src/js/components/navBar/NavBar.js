@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Nav, Navbar, NavItem, NavDropdown, MenuItem, PanelGroup,Panel } from 'react-bootstrap';
-import {NavLink} from "react-router-dom";
+import {NavLink, Link} from "react-router-dom";
 import LinkedInIcon from 'react-icons/lib/fa/linkedin-square';
 import FacebookIcon from 'react-icons/lib/fa/facebook-square';
 import Twittericon from 'react-icons/lib/fa/twitter-square';
@@ -36,13 +36,13 @@ class NavBar extends Component{
             </Navbar.Header>
             <Navbar.Collapse>
               <Nav>
-                <NavItem eventKey={1} ><NavLink to="/WhatIDo" />What I do</NavItem>
-                <NavItem eventKey={2} href="">About Me</NavItem>
-                <NavItem eventKey={2} href="#">Work Placement</NavItem>
-                <NavItem eventKey={2} href="#">Contact Me</NavItem>
-                <NavItem eventKey={2} href="#"><LinkedInIcon /></NavItem> 
-                <NavItem eventKey={2} href="#"><FacebookIcon /></NavItem> 
-                <NavItem eventKey={2} href="#"><Twittericon /></NavItem>
+                <NavItem eventKey={1} ><Link className={"navItems"} to="/WhatIDo">What I do</Link></NavItem>
+                <NavItem eventKey={2}><Link className={"navItems"} to="/AboutMe">About Me</Link></NavItem>
+                <NavItem eventKey={2} ><Link className={"navItems"} to="/WorkPlacement">Work Placement</Link></NavItem>
+                <NavItem eventKey={2} ><Link className={"navItems"} to="/ContactMe">Contact Me</Link></NavItem>
+                <NavItem eventKey={2} ><LinkedInIcon /></NavItem> 
+                <NavItem eventKey={2} ><FacebookIcon /></NavItem> 
+                <NavItem eventKey={2} ><Twittericon /></NavItem>
               </Nav>
               <Nav pullRight>
                 <NavDropdown eventKey={3} title="My Projects" noCaret id="bg-nav-dropdown" onClick={this.openCloseFolder}>
