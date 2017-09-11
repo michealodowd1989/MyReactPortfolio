@@ -179,6 +179,10 @@ hr {
   color:white;
 }
 
+.aboutMeMargin{
+  margin-right: 20px;
+}
+
 /* For Tablets */
 @media screen and (min-width: 540px) and (max-width: 780px) {
   .view {
@@ -229,9 +233,13 @@ hr {
   }
 
   .transcriptModal{
-    width:100%;
+    width:90%;
     height: 100%;
     text-align: center;
+  }
+
+  .aboutMeMargin{
+    margin-right: -15px;
   }
 }
 

@@ -60,7 +60,7 @@ class AboutMe extends Component{
         return(
             <div className={"background"}>
                 <NavBar />
-                <Row>
+                <Row className={"aboutMeMargin"}>
                     <Col lg={3} lgOffset={1}>
                         <img src={PicOfMe} alt={"Micheal O Dowd"} className="img-responsive img-center" />                
                         {accordionInstance}         
