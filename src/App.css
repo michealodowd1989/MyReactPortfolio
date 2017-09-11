@@ -1,0 +1,193 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+a {
+  text-decoration: none;
+}
+body {
+  background-color: #dadad9; 
+}
+
+.aboutMeDetails{
+  color:black;
+  font-size: 20px;
+ 
+}
+
+.myFavIcon {
+  width: 30px;
+  height: 30px;
+}
+
+p {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.personalDetailsButton a{
+  width: 391px;
+  font-size: 16px;
+  text-align: center;
+  
+}
+
+.personalDetailsButtonInner{
+  text-align: left;
+  font-size: 18px;
+}
+
+.modalYearButton{
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.transcriptModal{
+  width:35%;
+  height: 90%;
+  text-align: center;
+}
+.pdfButton{
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.nameWhiteFont{
+  color: white;
+}
+.CircularProgressbar {
+  /*
+   * This fixes an issue where the CircularProgressbar svg has
+   * 0 width inside a "display: flex" container, and thus not visible.
+   *
+   * If you're not using "display: flex", you can remove this style.
+   */
+  width: 80%;
+
+}
+
+.CircularProgressbar .CircularProgressbar-path {
+  stroke: #3e98c7;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 5s ease .5s;
+}
+
+.CircularProgressbar .CircularProgressbar-trail {
+  stroke: #A19F9F;
+}
+
+.CircularProgressbar .CircularProgressbar-text {
+  fill: #3e98c7;
+  font-size: 20px;
+  dominant-baseline: middle;
+  text-anchor: middle;
+}
+
+.AboutMeDropDownButtons {
+    text-align: center;
+}
+
+.contactMe {
+  font-size: 20px;
+  padding-left: 30%;
+}
+
+.messageBox {
+  width: 245px;
+}
+
+hr {
+  margin-right: 20%;
+}
+
+.sendEmailButton {
+  margin-left: 12%;
+}
+
+.contactMeSocialIcons {
+  margin-left: 55%;
+}
+
+.contactMeHeader {
+  margin-left: 42%;
+}
+
+.contactText {
+  font-size: 35px;
+  
+}
+
+.envelopeIcon {
+  font-size: 35px;
+  display: inline;
+  margin-left: 20px;
+}
+
+.jriLogo{
+  width:90%;
+  height:90%px;
+  margin-left: 5%;
+}
+
+.navItem{
+  border-bottom: 1px #dddddd solid;
+}
+
+.navBackground{
+  text-align: center;
+  background-color: white;
+}
+
+.workPlacementHeaders{
+  color: #337ab7;
+}
+
+
+/* For Tablets */
+@media screen and (min-width: 540px) and (max-width: 780px) {
+  .view {
+      width: 600px;
+  }
+  .sendEmailButton {
+    margin-left: 18%;
+  }
+  
+  .contactMeSocialIcons {
+    margin-left: 40%;
+  }
+  
+  .contactMeHeader {
+    margin-left: 35%;
+  }
+}
+
+/* For Mobile */
+@media screen and (max-width: 540px) {
+  .view {
+      width: 400px;
+  }
+  .sendEmailButton {
+    margin-left: 30%;
+  }
+}
+
