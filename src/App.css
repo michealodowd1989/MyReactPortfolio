@@ -23,9 +23,14 @@
   to { transform: rotate(360deg); }
 }
 
-a {
+a:hover {
   text-decoration: none;
 }
+
+a {
+  cursor: pointer;
+}
+
 body {
   background-color: #dadad9; 
 }
@@ -160,6 +165,11 @@ hr {
 
 .workPlacementHeaders{
   color: #337ab7;
+}
+
+.mapStyle{
+  height: '500px';
+  width: '500px';
 }
 
 

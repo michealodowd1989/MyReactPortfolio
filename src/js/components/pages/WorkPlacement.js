@@ -32,7 +32,7 @@ class WorkPlacement extends Component{
                 <h1 className={"workPlacementHeaders"}>Placement Details</h1>
                 <p><b>Company Name:</b> JRI-America</p>
                 <p><b>Address:</b> JRI America In, Technology Park, Tralee, Co. Kerry</p>
-                <p><b>Industry Supervisor:</b> Martin Gilliant</p>
+                <p><b>Industry Supervisor:</b> Martin Gillian</p>
                 <p><b>Academic Superviser:</b> Anne O' Brien</p>
                 <p><b>Start Date:</b> 11th January 2017</p>
                 <p><b>Finish Date:</b> 25th August 2017</p>
@@ -52,37 +52,31 @@ class WorkPlacement extends Component{
                     The Tralee office was established in 2011 and has grown rapidly, attracting graduates, 
                     talented and experienced staff.
                 </div>)
-        
+     
+        const location =  <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.ie/maps/place/Kerry+Technology+Park,+Tralee,+Co.+Kerry/@52.2874732,-9.6876255,14z/data=!3m1!4b1!4m5!3m4!1s0x48453522285ad457:0x3545948370a51a7f!8m2!3d52.287475!4d-9.6701159" allowfullscreen></iframe>    
+       
+        const navInstance = (      
+             <Nav  className={"navBackground"} bsStyle="pills" stacked  onSelect={this.handleSelect}>
+              <NavItem className={"navItem"} eventKey={1} active={this.state.selected == 1}>Placement Details</NavItem>
+              <NavItem className={"navItem"} active={this.state.selected == 2} eventKey={2}>About the JRI-America</NavItem>
+              <NavItem className={"navItem"} active={this.state.selected == 3}  eventKey={3} >What I Learnt</NavItem>
+              <NavItem eventKey={4} active={this.state.selected == 4}>Location</NavItem>
+            </Nav>);
+
         let choice = this.state.selected == 1 ? placementDetails : accordionInstance;
 
-        const navInstance = (
-            
-             <Nav  className={"navBackground"} bsStyle="pills" stacked activeKey={1} onSelect={this.handleSelect}>
-              <NavItem eventKey={1} active>Placement Details</NavItem>
-              <NavItem className={"navItem"} eventKey={2}>About the JRI-America</NavItem>
-              <NavItem className={"navItem"}  eventKey={3} >What I Learnt</NavItem>
-              <NavItem eventKey={4} >Location</NavItem>
-            </Nav>
-           
-          );
-
-     
         return(
             <div>
                 <NavBar />
                 <Row>
                     <Col lg={2} lgOffset={1}>
-                    <img src={jriAmericaLogo} alt={"Micheal O Dowd"} className="jriLogo" />                         
-                         {navInstance}        
+                        <img src={jriAmericaLogo} alt={"Micheal O Dowd"} className="jriLogo" />                         
+                        {navInstance}        
                     </Col>
                     <Col lg={4} lgOffset={1}>
-                    <Well>{choice}</Well>     
+                        <Well>{choice}</Well>     
                     </Col>
-
-                    </Row>
-
-           
-               
+                </Row>        
             </div>
         );
     }
